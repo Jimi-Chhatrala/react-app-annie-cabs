@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import Search from "./Components/Search";
 import Price from "./Components/Price";
 import AboutUs from "./Components/AboutUs";
+import HelpUs from "./Components/HelpUs";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Search />
       <Price />
       <AboutUs />
+      <HelpUs />
     </>
   );
 }
