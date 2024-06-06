@@ -6,6 +6,7 @@ import Price from "./Components/Price";
 import AboutUs from "./Components/AboutUs";
 import HelpUs from "./Components/HelpUs";
 import ContactUs from "./Components/ContactUs";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutUs />
       <HelpUs />
       <ContactUs />
+      <Footer />
     </>
   );
 }
