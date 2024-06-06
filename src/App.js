@@ -5,6 +5,7 @@ import Search from "./Components/Search";
 import Price from "./Components/Price";
 import AboutUs from "./Components/AboutUs";
 import HelpUs from "./Components/HelpUs";
+import ContactUs from "./Components/ContactUs";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Price />
       <AboutUs />
       <HelpUs />
+      <ContactUs />
     </>
   );
 }
