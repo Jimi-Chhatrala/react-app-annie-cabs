@@ -8,6 +8,7 @@ import HelpUs from "./Components/HelpUs";
 import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Login from "./Components/Login";
+import Forgot from "./Components/Forgot";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       {/* <AboutUs /> */}
       {/* <HelpUs /> */}
       {/* <ContactUs /> */}
-      <Login />
+      {/* <Login /> */}
+      <Forgot />
       <Footer />
     </>
   );

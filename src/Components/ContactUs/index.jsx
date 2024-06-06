@@ -4,7 +4,7 @@ function ContactUs() {
   return (
     <div className="my-20 max-w-6xl mx-auto p-4 space-y-20">
       <div className="text-center">
-        <h1 class="text-4xl font-semibold">For More Details Contact us</h1>
+        <h1 className="text-4xl font-semibold">For More Details Contact us</h1>
       </div>
       <div className="w-full sm:space-x-10 lg:space-x-20 sm:flex justify-around">
         <div className="sm:w-1/2 space-y-2">
@@ -41,13 +41,13 @@ function ContactUs() {
           <div className="grid w-full space-y-2">
             <label className="font-semibold text-sm">Comment or Message</label>
             <textarea
-              class="bg-[#F2F2F2]  w-full rounded-md p-2"
+              className="bg-[#F2F2F2]  w-full rounded-md p-2"
               type="textarea"
               rows="3"
             ></textarea>
           </div>
-          <div class="text-center">
-            <button class="bg-[#6EDA48] my-5 py-1 px-6 rounded-md text-white text-lg">
+          <div className="text-center">
+            <button className="bg-[#6EDA48] my-5 py-1 px-6 rounded-md text-white text-lg">
               Submit
             </button>
           </div>

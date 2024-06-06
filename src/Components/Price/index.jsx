@@ -12,7 +12,7 @@ function Price() {
         <span className="text-center font-semibold">
           Your pick of rides at low prices
         </span>
-        <div class="text-[#726d6d]">
+        <div className="text-[#726d6d]">
           No matter where you’re going, by bus or carpool, find the perfect ride
           from our wide range of destinations and routes at low prices.
         </div>
@@ -26,7 +26,7 @@ function Price() {
         <span className="text-center font-semibold">
           Your pick of rides at low prices
         </span>
-        <div class="text-[#726d6d]">
+        <div className="text-[#726d6d]">
           No matter where you’re going, by bus or carpool, find the perfect ride
           from our wide range of destinations and routes at low prices.
         </div>
@@ -40,7 +40,7 @@ function Price() {
         <span className="text-center font-semibold">
           Your pick of rides at low prices
         </span>
-        <div class="text-[#726d6d]">
+        <div className="text-[#726d6d]">
           No matter where you’re going, by bus or carpool, find the perfect ride
           from our wide range of destinations and routes at low prices.
         </div>

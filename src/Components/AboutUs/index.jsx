@@ -13,7 +13,7 @@ function AboutUs() {
             alt="About Us Car Image"
           />
         </div>
-        <div class="bg-[#6EDA48] hidden sm:flex w-1 mx-2 h-52 rounded-full"></div>
+        <div className="bg-[#6EDA48] hidden sm:flex w-1 mx-2 h-52 rounded-full"></div>
         <div className="w-full">
           <div className="space-y-4">
             <p className="text-[#726d6d]">

@@ -22,7 +22,7 @@ function NavBar() {
             Register
           </button>
         </div>
-        <div class="text-2xl hidden">≡</div>
+        <div className="text-2xl hidden">≡</div>
       </div>
     </div>
   );

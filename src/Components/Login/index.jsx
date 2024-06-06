@@ -15,11 +15,11 @@ function Login() {
                 <div className="w-full bg-[#6EDA48] text-center text-white font-medium p-2 rounded-md">
                   User
                 </div>
-                <div class="w-full text-center font-medium p-2 rounded-md">
+                <div className="w-full text-center font-medium p-2 rounded-md">
                   Vendor
                 </div>
               </div>
-              <form autocomplete="off" class="space-y-4">
+              <form autocomplete="off" className="space-y-4">
                 <div className="grid">
                   <label className="font-medium text-sm">Mobile No.</label>
                   <input
