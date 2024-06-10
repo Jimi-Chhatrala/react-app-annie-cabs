@@ -7,7 +7,6 @@ import bgImage2 from "../../images/group-50.png";
 function ContactUsPage() {
   return (
     <div>
-      <NavBar />
       <div
         className="h-[300px] bg-center bg-cover"
         style={{ backgroundImage: `url(${bgImage})` }}
@@ -164,7 +163,6 @@ function ContactUsPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
