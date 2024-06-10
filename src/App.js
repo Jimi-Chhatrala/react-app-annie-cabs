@@ -9,19 +9,23 @@ import ContactUs from "./Components/ContactUs";
 import Footer from "./Components/Footer";
 import Login from "./Components/Login";
 import Forgot from "./Components/Forgot";
+import AboutUsPage from "./Components/AboutUsPage";
+import ContactUsPage from "./Components/ContactUsPage";
 
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       {/* <Search /> */}
       {/* <Price /> */}
       {/* <AboutUs /> */}
       {/* <HelpUs /> */}
       {/* <ContactUs /> */}
       {/* <Login /> */}
-      <Forgot />
-      <Footer />
+      {/* <Forgot /> */}
+      {/* <Footer /> */}
+      {/* <AboutUsPage /> */}
+      <ContactUsPage />
     </>
   );
 }
