@@ -17,6 +17,7 @@ import Layout from "./Components/Layout";
 import Home from "./Components/Home";
 import VLogin from "./Components/VLogin";
 import VRegister from "./Components/VRegister";
+import EditProfile from "./Components/EditProfile";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="v_login" element={<VLogin />} />
           <Route path="register" element={<Register />} />
           <Route path="v_register" element={<VRegister />} />
+          <Route path="edit_profile" element={<EditProfile />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

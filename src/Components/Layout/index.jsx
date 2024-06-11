@@ -55,7 +55,10 @@ function Layout() {
             </button>
             <div className="invisible absolute bg-white px-1 py-2 -ml-8 rounded-lg group-hover:visible">
               <ul className="items-center">
-                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                <li
+                  className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer"
+                  onClick={() => navigate("/edit_profile")}
+                >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
