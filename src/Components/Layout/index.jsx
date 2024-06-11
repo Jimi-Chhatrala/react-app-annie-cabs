@@ -44,7 +44,7 @@ function Layout() {
           {/* Login Register Button End */}
 
           {/* Login User Info Show Start */}
-          <div>
+          <div className="group">
             <button className="bg-[#6EDA48] w-full min-w-[130px] py-1 px-2 flex items-center text-lg font-semibold rounded-lg">
               <img
                 className="w-8 h-8 mr-2 rounded-full"
@@ -53,7 +53,7 @@ function Layout() {
               />
               <span className="w-full">User</span>
             </button>
-            <div className="absolute bg-white px-1 py-2 -ml-8 rounded-lg">
+            <div className="invisible absolute bg-white px-1 py-2 -ml-8 rounded-lg group-hover:visible">
               <ul className="items-center">
                 <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
                   <svg
