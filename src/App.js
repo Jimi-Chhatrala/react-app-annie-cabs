@@ -15,6 +15,8 @@ import ContactUsPage from "./Components/ContactUsPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Components/Layout";
 import Home from "./Components/Home";
+import VLogin from "./Components/VLogin";
+import VRegister from "./Components/VRegister";
 
 function App() {
   return (
@@ -25,7 +27,9 @@ function App() {
           <Route path="about" element={<AboutUsPage />} />
           <Route path="contact" element={<ContactUsPage />} />
           <Route path="login" element={<Login />} />
+          <Route path="v_login" element={<VLogin />} />
           <Route path="register" element={<Register />} />
+          <Route path="v_register" element={<VRegister />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>

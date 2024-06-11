@@ -2,7 +2,7 @@ import React from "react";
 import bgImage from "../../images/Screenshot_2023-10-25_163132-transformed_auto_x2.jpg";
 import { useNavigate } from "react-router-dom";
 
-function Login() {
+function VLogin() {
   const navigate = useNavigate();
   return (
     <div className="sm:p-8 w-full">
@@ -14,13 +14,13 @@ function Login() {
           <div className="w-full max-w-sm px-3">
             <div className="p-4 w-full rounded-md bg-[#ffffff8c] space-y-8">
               <div className="flex rounded-md w-full bg-white hover:cursor-pointer">
-                <div className="w-full bg-[#6EDA48] text-center text-white font-medium p-2 rounded-md">
-                  User
-                </div>
                 <div
                   className="w-full text-center font-medium p-2 rounded-md"
-                  onClick={() => navigate("/v_login")}
+                  onClick={() => navigate("/login")}
                 >
+                  User
+                </div>
+                <div className="w-full bg-[#6EDA48] text-white text-center font-medium p-2 rounded-md">
                   Vendor
                 </div>
               </div>
@@ -81,4 +81,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default VLogin;
