@@ -26,7 +26,8 @@ function Layout() {
           </li>
         </ul>
         <div className="sm:flex">
-          <div className="space-x-3">
+          {/* Login Register Button Start */}
+          {/* <div className="space-x-3">
             <button
               className="border-2 font-bold hover:cursor-pointer px-6 border-slate-800 rounded-md"
               onClick={() => navigate("/login")}
@@ -39,7 +40,96 @@ function Layout() {
             >
               Register
             </button>
+          </div> */}
+          {/* Login Register Button End */}
+
+          {/* Login User Info Show Start */}
+          <div>
+            <button className="bg-[#6EDA48] w-full min-w-[130px] py-1 px-2 flex items-center text-lg font-semibold rounded-lg">
+              <img
+                className="w-8 h-8 mr-2 rounded-full"
+                src={require("../../images/user.jpg")}
+                alt="User Image"
+              />
+              <span className="w-full">User</span>
+            </button>
+            <div className="absolute bg-white px-1 py-2 -ml-8 rounded-lg">
+              <ul className="items-center">
+                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 1024 1024"
+                    className="mx-2"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M858.5 763.6a374 374 0 0 0-80.6-119.5 375.63 375.63 0 0 0-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 0 0-80.6 119.5A371.7 371.7 0 0 0 136 901.8a8 8 0 0 0 8 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 0 0 8-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path>
+                  </svg>
+                  Edit Profile
+                </li>
+                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="mx-2"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="Lock">
+                      <g>
+                        <path d="M17.44,9.33h-1.1V6.4a4.34,4.34,0,0,0-8.68,0V9.33H6.56a2.5,2.5,0,0,0-2.5,2.5v7.61a2.507,2.507,0,0,0,2.5,2.5H17.44a2.507,2.507,0,0,0,2.5-2.5V11.83A2.5,2.5,0,0,0,17.44,9.33ZM8.66,6.4a3.34,3.34,0,0,1,6.68,0V9.33H8.66ZM18.94,19.44a1.511,1.511,0,0,1-1.5,1.5H6.56a1.511,1.511,0,0,1-1.5-1.5V11.83a1.5,1.5,0,0,1,1.5-1.5H17.44a1.5,1.5,0,0,1,1.5,1.5Z"></path>
+                        <path d="M13,14.95a.984.984,0,0,1-.5.86v1.5a.5.5,0,0,1-1,0v-1.5a.984.984,0,0,1-.5-.86,1,1,0,0,1,2,0Z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                  Change Password
+                </li>
+                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                  <svg
+                    stroke="currentColor"
+                    fill="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 24 24"
+                    className="mx-2"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path fill="none" d="M0 0h24v24H0V0z"></path>
+                    <path d="M15.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM5 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5zm5.8-10l2.4-2.4.8.8c1.3 1.3 3 2.1 5.1 2.1V9c-1.5 0-2.7-.6-3.6-1.5l-1.9-1.9c-.5-.4-1-.6-1.6-.6s-1.1.2-1.4.6L7.8 8.4c-.4.4-.6.9-.6 1.4 0 .6.2 1.1.6 1.4L11 14v5h2v-6.2l-2.2-2.3zM19 12c-2.8 0-5 2.2-5 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 8.5c-1.9 0-3.5-1.6-3.5-3.5s1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5-1.6 3.5-3.5 3.5z"></path>
+                  </svg>
+                  Ride Inquiry
+                </li>
+                <li className="text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    className="mx-2"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"></path>
+                    <path d="M9 12h12l-3 -3"></path>
+                    <path d="M18 15l3 -3"></path>
+                  </svg>
+                  Logout
+                </li>
+              </ul>
+            </div>
           </div>
+          {/* Login User Info Show End */}
           <div className="text-2xl hidden">≡</div>
         </div>
       </div>
