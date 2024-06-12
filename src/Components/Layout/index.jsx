@@ -73,7 +73,10 @@ function Layout() {
                   </svg>
                   Edit Profile
                 </li>
-                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                <li
+                  className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer"
+                  onClick={() => navigate("/change_password")}
+                >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -93,7 +96,10 @@ function Layout() {
                   </svg>
                   Change Password
                 </li>
-                <li className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer">
+                <li
+                  className="border-b-2 text-sm font-medium flex items-center p-1 hover:cursor-pointer"
+                  onClick={() => navigate("/ride_inquiry")}
+                >
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

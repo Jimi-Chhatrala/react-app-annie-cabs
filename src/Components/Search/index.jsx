@@ -1,7 +1,9 @@
 import React from "react";
 import bgImage from "../../images/bg-img-home.png";
+import { useNavigate } from "react-router-dom";
 
 function Search() {
+  const navigate = useNavigate();
   return (
     <div
       className="h-[500px] bg-center bg-no-repeat bg-cover flex items-end"
@@ -27,7 +29,10 @@ function Search() {
             name="date"
             required
           />
-          <button className="bg-[#6EDA48] rounded-lg py-3 w-full font-semibold">
+          <button
+            className="bg-[#6EDA48] rounded-lg py-3 w-full font-semibold"
+            onClick={() => navigate("/cab_search")}
+          >
             Search
           </button>
         </form>

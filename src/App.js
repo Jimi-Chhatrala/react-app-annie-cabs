@@ -18,6 +18,15 @@ import Home from "./Components/Home";
 import VLogin from "./Components/VLogin";
 import VRegister from "./Components/VRegister";
 import EditProfile from "./Components/EditProfile";
+import ChangePassword from "./Components/ChangePassword";
+import RideInquiry from "./Components/RideInquiry";
+import CabSearch from "./Components/CabSearch";
+import RideDetails from "./Components/RideDetails";
+import UserChat from "./Components/UserChat";
+import VendorRideInquiry from "./Components/VendorRideInquiry";
+import RideBook from "./Components/RideBook";
+import AddRide from "./Components/AddRide";
+import MyVehicle from "./Components/MyVehicle";
 
 function App() {
   return (
@@ -32,6 +41,15 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="v_register" element={<VRegister />} />
           <Route path="edit_profile" element={<EditProfile />} />
+          <Route path="change_password" element={<ChangePassword />} />
+          <Route path="ride_inquiry" element={<RideInquiry />} />
+          <Route path="cab_search" element={<CabSearch />} />
+          <Route path="ride_details" element={<RideDetails />} />
+          <Route path="user_chat" element={<UserChat />} />
+          <Route path="vendor_ride_inquiry" element={<VendorRideInquiry />} />
+          <Route path="ride_book" element={<RideBook />} />
+          <Route path="add_ride" element={<AddRide />} />
+          <Route path="my_vehicle" element={<MyVehicle />} />
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
       </Routes>
