@@ -136,7 +136,7 @@ function ContactUsPage() {
               </label>
               <textarea
                 type="textarea"
-                class="bg-[#F2F2F2] w-full rounded-md p-2"
+                className="bg-[#F2F2F2] w-full rounded-md p-2"
                 rows="3"
               ></textarea>
             </div>

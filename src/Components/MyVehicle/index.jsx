@@ -70,9 +70,9 @@ function MyVehicle() {
                 <option value="5">Toyota</option>
               </select>
             </div>
-            <div class="grid">
+            <div className="grid">
               <label>Vehicle Model</label>
-              <select class="max-w-max p-2">
+              <select className="max-w-max p-2">
                 <option disabled="">Select</option>
                 <option value="swift">swift</option>
                 <option value="wagon R">wagon R</option>

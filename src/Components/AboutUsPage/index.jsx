@@ -3,6 +3,7 @@ import NavBar from "../NavBar";
 import Footer from "../Footer";
 import bgImage from "../../images/car-bg.png";
 import bgImage2 from "../../images/group-50.png";
+import bgImage3 from "../../images/Rectangle92.png";
 
 function AboutUsPage() {
   return (
@@ -47,16 +48,31 @@ function AboutUsPage() {
         </div>
       </div>
       <div
-        className="w-full bg-cover bg h-[300px] max-w-6xl mx-auto my-10"
-        style={{ backgroundImage: `url(${bgImage2})` }}
-      ></div>
+        className="w-full bg-cover bg h-[700px] sm:h-[300px] max-w-6xl mx-auto my-1"
+        style={{ backgroundImage: `url(${bgImage3})` }}
+      >
+        <div className="h-[300px] flex justify-around items-center flex-col sm:flex-row backdrop-blur-sm gap-4 py-5">
+          <div className="w-[80px]">
+            <img src={require("../../images/Group34.png")} alt="" />
+          </div>
+          <div className="w-[80px]">
+            <img src={require("../../images/Group35.png")} alt="" />
+          </div>
+          <div className="w-[190px]">
+            <img src={require("../../images/Group36.png")} alt="" />
+          </div>
+          <div className="w-[95px]">
+            <img src={require("../../images/Group37.png")} alt="" />
+          </div>
+        </div>
+      </div>
       <div className="my-6">
         <div className="text-2xl font-semibold text-center">How It Works</div>
         <div className="mx-auto h-[2px] rounded-md w-24 bg-green-300"></div>
       </div>
       <div className="sm:flex w-full max-w-6xl mx-auto sm:space-x-4 sm:space-y-0 space-y-4 justify-around p-4">
         <div className="w-full space-y-4 rounded-lg sm:max-w-[300px] p-4 items-center grid">
-          <div class="bg-[#6EDA48] rounded-full max-w-max p-3 mx-auto">
+          <div className="bg-[#6EDA48] rounded-full max-w-max p-3 mx-auto">
             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPnSURBVHgB7Zz/ddowEMe/9PX/0gmiTJB0gpIJmk4QMkHTCaATlE5AOkHTCaATQCfAmYBscJGejmAIGCe6s6Wgz3t6tmMFP77c6cfpZEAZIuraMrBlYsuSPDNbxrYYZPbjBLJlwaI5AW+43Jb+PkDmOSXxFvsszf59mEXcA1vck3j2+I2vJ2VB7fmIRTxHxmPF6LEofb7u0ybLlWDcRrrrETIeds1l6XpBz3Gidfn+qFw/Jd5BB2PL3J2wu5oddZx4N3w+5+vk0BLQYfhY1bZd8TFJ8RxaAjqLMuyipqLe6t4Z/09yaAl4y0fnopXW5Toce+jb8huZNaXhyR+qZlk1VjxaeHgyo8M8DWkyO6hhgUMkjGYvvOI/3jBNCHiIEyRMDAJ+RMJkCwwkBgGTnYU4soCBZAEDiUFAN1ZMth1sQkBTo06yPXEUFoh6IkdJLALmeGAgWcBADBIlFgE/IFGaELDOECX3woGcIVFyJxJINAKuFtlT4z30MTXruY7kwZ3wAlMP6wX6eafTKXCM0O60jl24/BmXUzPZc/84M7honVR5iDr1ohOxA2Xct4YsF9adp+TbTLccauBd/226Ocnj1poneyz2JxpG1QLJdwYLNMvUWuIFGkJ7GGPQPK4jukFDaAt4hXYYUEPjSjUX5i/QZtbpnS3/4F06vdQ5ep4X3SYL4nxtaTRd+AviwdgyJt+DGwii4sLUvvtWUdjyybr1AwTQssBLxIuxZQwhtAT8jLi5JJ9aHMwxWuCKHgQQF5B/Wa0xmEi7xYhkQ2hYoNbg+Yctp5DbDmEQG7S5vVWSYekZdZPXD3GH2CBl8UrPkRBxgpggvytdmtGBZ97S6xGJEom0geRH90PIc0L+1QDdreedk7egZJdDNyC/jV+Tk63n9SgckZmSVC8c07y3LiJDLSkBj3arlpSASec5hyAlYIEjRSozwe311VyzndtGvzyNk7B4kWmhSDyQ/DBjhrQSJQsbEzxFICIuzMHJ70gLEQsUSy6yIt5ZS5xCKEy0xTU221nX64cuosclIOO+qHNl6V55Yn+g+9UFyWSLFBBANJzFuSnXSIN7CCAeD3SubA+/ED8FBNAK6Q8R/9iwgAAqAnKv/BWyIXhp4s9WoPAozVXFZ7vo92vjgTOkAq1fwCMqIoUFcMXWhdUhmfB7b+szBxRGHylB4YtN5Rc2Digcg9QgH4YPwYk4pnDSaf+2If3Qfx36SBlav7m3LQxSh8KWI0NIp/etguSyC15KD2+FFkRUyURobbdmC9O9v1Cg1e2uHP5q6t2pUygQw37hAvoUWlsdmtgvfAg3w5juudfFy6Lb++pPocQjHq0ctwTqKLUAAAAASUVORK5CYII=" />
           </div>
           <span className="text-center text-lg font-bold">
