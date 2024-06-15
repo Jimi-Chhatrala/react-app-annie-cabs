@@ -29,6 +29,7 @@ import AddRide from "./Components/AddRide";
 import MyVehicle from "./Components/MyVehicle";
 import Admin from "./Components/AdminComponents/AdminLayout";
 import AdminLayout from "./Components/AdminComponents/AdminLayout";
+import AdminVehicle from "./Components/AdminComponents/AdminVehicle";
 
 function App() {
   return (
@@ -53,7 +54,9 @@ function App() {
           <Route path="add_ride" element={<AddRide />} />
           <Route path="my_vehicle" element={<MyVehicle />} />
           <Route path="admin" element={<Admin />} /> */}
-        <Route path="/admin_layout" element={<AdminLayout />}></Route>
+        <Route path="/admin_layout" element={<AdminLayout />}>
+          <Route path="admin_vehicle" element={<AdminVehicle />} />
+        </Route>
         {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}
       </Routes>

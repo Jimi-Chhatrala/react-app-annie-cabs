@@ -13,6 +13,7 @@ import { IoMdContact } from "react-icons/io";
 import { IoLogOut, IoSpeedometerOutline } from "react-icons/io5";
 import { MdContactPhone, MdOutlineVerifiedUser } from "react-icons/md";
 import { RiLogoutBoxRFill } from "react-icons/ri";
+import { Link, Outlet } from "react-router-dom";
 
 const App = () => {
   const [open, setOpen] = useState(true);
@@ -34,12 +35,6 @@ const App = () => {
           open ? "w-72" : "w-20 "
         } bg-dark-purple h-screen p-5  pt-8 relative duration-300`}
       >
-        {/* <img
-          src={require("../../../assets/control.png")}
-          className={`absolute cursor-pointer -right-3 top-9 w-7 border-dark-purple
-           border-2 rounded-full  ${!open && "rotate-180"}`}
-          onClick={() => setOpen(!open)}
-        /> */}
         <div
           className="absolute cursor-pointer -right-10 top-5 w-7"
           onClick={() => setOpen(!open)}
@@ -51,20 +46,7 @@ const App = () => {
           )}
         </div>
         <div className="flex gap-x-4 items-center bg-white rounded">
-          <img
-            src={require("../../../images/logo.png")}
-
-            // className={`cursor-pointer duration-500 ${
-            //   open && "rotate-[360deg]"
-            // }`}
-          />
-          {/* <h1
-            className={`text-white origin-left font-medium text-xl duration-200 ${
-              !open && "scale-0"
-            }`}
-          >
-            Designer
-          </h1> */}
+          <img src={require("../../../images/logo.png")} />
         </div>
         <ul className="pt-6">
           <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
@@ -85,12 +67,14 @@ const App = () => {
               Vendor
             </span>
           </li>
-          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
-            <FaCar className="w-6 h-6" />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
-              Ride
-            </span>
-          </li>
+          <Link to="admin_vehicle">
+            <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
+              <FaCar className="w-6 h-6" />
+              <span className={`${!open && "hidden"} origin-left duration-200`}>
+                Ride
+              </span>
+            </li>
+          </Link>
           <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
             <MdOutlineVerifiedUser className="w-6 h-6" />
             <span className={`${!open && "hidden"} origin-left duration-200`}>
@@ -105,28 +89,9 @@ const App = () => {
           </li>
         </ul>
       </div>
-      {/* <div> */}
       <div className="w-full">
         <nav className="bg-slate-200 px-4 py-3 flex justify-end">
-          {/* <div className="flex items-center text-xl">
-            <FaBars className="text-white me-4 cursor-pointer" />
-            <span className="text-white font-demibold">E-commerce</span>
-          </div> */}
           <div className="flex items-center gap-x-5">
-            {/* <div className="relative md:w-65">
-              <span className="relative md:absolute inset-y-0 left-0 flex items-center pl-2">
-                <button className="p-1 focus:outline-none text-white md:text-black">
-                  <FaSearch />
-                </button>
-              </span>
-              <input
-                type="text"
-                className="w-full px-4 py-1 pl-12 rounded shadow outline-none hidden md:block"
-              />
-            </div> */}
-            {/* <div className="text-white">
-              <FaBell className="w-6 h-6" />
-            </div> */}
             <div className="relative">
               <button className="text-white group flex gap-x-2">
                 {/* <FaUserCircle className="w-6 h-6 mt-1" /> */}
@@ -162,12 +127,9 @@ const App = () => {
             </div>
           </div>
         </nav>
-        <div>
-          <h1>Hello World</h1>
-        </div>
+        <Outlet />
       </div>
     </div>
-    // </div>
   );
 };
 export default App;
