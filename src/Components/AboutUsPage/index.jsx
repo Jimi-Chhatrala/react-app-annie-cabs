@@ -48,7 +48,7 @@ function AboutUsPage() {
         </div>
       </div>
       <div
-        className="w-full bg-cover bg h-[700px] sm:h-[300px] max-w-6xl mx-auto my-1"
+        className="w-full bg-cover bg h-[700px] sm:h-[300px] max-w-6xl mx-auto my-7"
         style={{ backgroundImage: `url(${bgImage3})` }}
       >
         <div className="h-[300px] flex justify-around items-center flex-col sm:flex-row backdrop-blur-sm gap-4 py-5">

@@ -27,13 +27,15 @@ import VendorRideInquiry from "./Components/VendorRideInquiry";
 import RideBook from "./Components/RideBook";
 import AddRide from "./Components/AddRide";
 import MyVehicle from "./Components/MyVehicle";
+import Admin from "./Components/AdminComponents/AdminLayout";
+import AdminLayout from "./Components/AdminComponents/AdminLayout";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        {/* <Route path="/" element={<Layout />}> */}
+        {/* <Route index element={<Home />} />
           <Route path="about" element={<AboutUsPage />} />
           <Route path="contact" element={<ContactUsPage />} />
           <Route path="login" element={<Login />} />
@@ -50,8 +52,10 @@ function App() {
           <Route path="ride_book" element={<RideBook />} />
           <Route path="add_ride" element={<AddRide />} />
           <Route path="my_vehicle" element={<MyVehicle />} />
-          {/* <Route path="*" element={<NoPage />} /> */}
-        </Route>
+          <Route path="admin" element={<Admin />} /> */}
+        <Route path="/admin_layout" element={<AdminLayout />}></Route>
+        {/* <Route path="*" element={<NoPage />} /> */}
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
   );
