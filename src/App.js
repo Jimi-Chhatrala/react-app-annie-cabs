@@ -37,6 +37,7 @@ import AdminDashBoard from "./Components/AdminComponents/AdminDashboard";
 import VendorList from "./Components/AdminComponents/VendorList";
 import UserList from "./Components/AdminComponents/UserList";
 import AdminProfile from "./Components/AdminComponents/AdminProfile";
+import AdminLogin from "./Components/AdminComponents/AdminLogin";
 
 function App() {
   return (
@@ -70,6 +71,7 @@ function App() {
           <Route path="user_list" element={<UserList />} />
           <Route path="admin_profile" element={<AdminProfile />} />
         </Route>
+        <Route path="admin_login" element={<AdminLogin />} />
         {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}
       </Routes>

@@ -42,7 +42,7 @@ export default function AdminProfile() {
       {activeTab === "personal-details" && (
         <div className="bg-white m-4 p-4 space-y-5">
           <p className="font-bold">Personal Details</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-2">
             <div className="flex flex-col gap-y-2">
               <label htmlFor="first_name">First Name</label>
               <input type="text" id="first_name" className="border p-1" />
@@ -70,7 +70,7 @@ export default function AdminProfile() {
       {activeTab === "change-password" && (
         <div className="bg-white m-4 p-4 space-y-5">
           <p className="font-bold">Change Password</p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-x-2 gap-y-2">
             <div className="flex flex-col gap-y-2">
               <label htmlFor="old_password">Old Password</label>
               <input type="password" id="old_password" className="border p-1" />
