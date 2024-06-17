@@ -18,7 +18,6 @@ import LastPageIcon from "@mui/icons-material/LastPage";
 import { styled } from "@mui/material/styles";
 import { tableCellClasses } from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
-import { useNavigate } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -121,26 +120,24 @@ function createData(firstname, lastname, phoneno, profile) {
 // ].sort((a, b) => (a.calories < b.calories ? -1 : 1));
 
 const rows = [
-  createData("Vendor", "Vendor", 9898989898, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
-  createData("Vendor2", "Vendor2", 6565656565, "../../../images/user.jpg"),
+  createData("User", "User", 9898989898, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
+  createData("User2", "User2", 6565656565, "../../../images/user.jpg"),
 ];
 
-export default function VendorList() {
-  const navigate = useNavigate();
-
+export default function UserList() {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
@@ -165,7 +162,7 @@ export default function VendorList() {
   return (
     <div className="bg-white m-4 space-y-2">
       <div className="p-4">
-        <p className="text-2xl">Vendor List</p>
+        <p className="text-2xl">User List</p>
       </div>
       <div className="flex justify-end p-4">
         <input
@@ -186,7 +183,7 @@ export default function VendorList() {
               <StyledTableCell>Action</StyledTableCell>
               <StyledTableCell>Action</StyledTableCell>
               <StyledTableCell>Action</StyledTableCell>
-              <StyledTableCell>Action</StyledTableCell>
+              {/* <StyledTableCell>Action</StyledTableCell> */}
               {/* <StyledTableCell align="right">Calories</StyledTableCell> */}
               {/* <StyledTableCell align="right">Fat&nbsp;(g)</StyledTableCell> */}
               {/* <StyledTableCell align="right">Carbs&nbsp;(g)</StyledTableCell> */}
@@ -233,14 +230,11 @@ export default function VendorList() {
                     Details
                   </button>
                 </TableCell>
-                <TableCell component="th" scope="row">
-                  <button
-                    className="px-4 py-2 bg-purple-500 rounded"
-                    onClick={() => navigate("/admin_layout/admin_vehicle")}
-                  >
+                {/* <TableCell component="th" scope="row">
+                  <button className="px-4 py-2 bg-purple-500 rounded">
                     Vehicle
                   </button>
-                </TableCell>
+                </TableCell> */}
                 {/* <TableCell style={{ width: 160 }} align="right">
                   {row.calories}
                 </TableCell>

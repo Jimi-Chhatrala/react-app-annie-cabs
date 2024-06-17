@@ -49,32 +49,39 @@ const App = () => {
           <img src={require("../../../images/logo.png")} />
         </div>
         <ul className="pt-6">
-          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
-            <IoSpeedometerOutline className="w-6 h-6" />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
-              Dashboard
-            </span>
-          </li>
-          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
-            <FaRegUser className="w-6 h-6" />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
-              User
-            </span>
-          </li>
-          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
-            <FaRegUserCircle className="w-6 h-6" />
-            <span className={`${!open && "hidden"} origin-left duration-200`}>
-              Vendor
-            </span>
-          </li>
-          <Link to="admin_vehicle">
+          <Link to="admin_dashboard">
             <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
-              <FaCar className="w-6 h-6" />
+              <IoSpeedometerOutline className="w-6 h-6" />
               <span className={`${!open && "hidden"} origin-left duration-200`}>
-                Ride
+                Dashboard
               </span>
             </li>
           </Link>
+          <Link to="user_list">
+            <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
+              <FaRegUser className="w-6 h-6" />
+              <span className={`${!open && "hidden"} origin-left duration-200`}>
+                User
+              </span>
+            </li>
+          </Link>
+          <Link to="vendor_list">
+            <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
+              <FaRegUserCircle className="w-6 h-6" />
+              <span className={`${!open && "hidden"} origin-left duration-200`}>
+                Vendor
+              </span>
+            </li>
+          </Link>
+
+          {/* <Link to="admin_vehicle"> */}
+          <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
+            <FaCar className="w-6 h-6" />
+            <span className={`${!open && "hidden"} origin-left duration-200`}>
+              Ride
+            </span>
+          </li>
+          {/* </Link> */}
           <li className="flex  rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4">
             <MdOutlineVerifiedUser className="w-6 h-6" />
             <span className={`${!open && "hidden"} origin-left duration-200`}>
