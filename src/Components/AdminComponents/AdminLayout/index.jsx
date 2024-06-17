@@ -107,20 +107,20 @@ const App = () => {
                   alt=""
                   className="w-10 h-10 rounded-full"
                 />
-                <div className="text-black text-sm">
+                <div className="text-black text-sm group">
                   <p className="font-bold">Hello Admin</p>
                   <p className="flex flex-start">Admin</p>
                 </div>
-                <div className="z-10 hidden absolute bg-white rounded-lg shadow w-36 group-focus:block top-full right-0">
+                <div className="z-10 invisible absolute bg-white rounded-lg shadow w-36 group-hover:visible top-full right-0">
                   <p className="pt-1 text-xs font-semibold text-gray-950">
                     Welcome Hello Admin
                   </p>
                   <ul className="py-2 flex flex-col gap-y-2 text-sm text-gray-950">
                     <li className="hover:bg-slate-300 text-start">
-                      <a href="#" className="ml-4">
+                      <Link to="admin_profile" className="ml-4">
                         <IoMdContact className="inline-block -mt-1 w-5 h-5" />{" "}
                         Profile
-                      </a>
+                      </Link>
                     </li>
                     <li className="hover:bg-slate-300 text-start">
                       <a href="#" className="ml-4">

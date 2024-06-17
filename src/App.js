@@ -36,6 +36,7 @@ import VendorDetails from "./Components/AdminComponents/VendorDetails";
 import AdminDashBoard from "./Components/AdminComponents/AdminDashboard";
 import VendorList from "./Components/AdminComponents/VendorList";
 import UserList from "./Components/AdminComponents/UserList";
+import AdminProfile from "./Components/AdminComponents/AdminProfile";
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
           <Route path="admin_dashboard" element={<AdminDashBoard />} />
           <Route path="vendor_list" element={<VendorList />} />
           <Route path="user_list" element={<UserList />} />
+          <Route path="admin_profile" element={<AdminProfile />} />
         </Route>
         {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}
