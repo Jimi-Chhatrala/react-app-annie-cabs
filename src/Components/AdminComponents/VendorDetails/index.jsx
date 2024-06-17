@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function AdminDetails() {
+export default function VendorDetails() {
   return (
     <div className="bg-[#f3f3f1] p-4 w-full flex flex-col gap-4 lg:flex-row">
       <div className="w-full lg:w-2/5 space-y-4">

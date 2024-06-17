@@ -89,7 +89,7 @@ const App = () => {
           </li>
         </ul>
       </div>
-      <div className="w-full">
+      <div className="w-full bg-[#f3f3f1]">
         <nav className="bg-slate-200 px-4 py-3 flex justify-end">
           <div className="flex items-center gap-x-5">
             <div className="relative">
