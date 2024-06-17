@@ -30,6 +30,7 @@ import MyVehicle from "./Components/MyVehicle";
 import Admin from "./Components/AdminComponents/AdminLayout";
 import AdminLayout from "./Components/AdminComponents/AdminLayout";
 import AdminVehicle from "./Components/AdminComponents/AdminVehicle";
+import AdminDetails from "./Components/AdminComponents/AdminDetails";
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
           <Route path="admin" element={<Admin />} /> */}
         <Route path="/admin_layout" element={<AdminLayout />}>
           <Route path="admin_vehicle" element={<AdminVehicle />} />
+          <Route path="admin_details" element={<AdminDetails />} />
         </Route>
         {/* <Route path="*" element={<NoPage />} /> */}
         {/* </Route> */}
