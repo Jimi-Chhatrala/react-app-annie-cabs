@@ -39,6 +39,8 @@ import UserList from "./Components/AdminComponents/UserList";
 import AdminProfile from "./Components/AdminComponents/AdminProfile";
 import AdminLogin from "./Components/AdminComponents/AdminLogin";
 import RideList from "./Components/AdminComponents/RideList";
+import AdminRideDetails from "./Components/AdminComponents/AdminRideDetails";
+import AdminVehicleInfo from "./Components/AdminComponents/AdminVehicleInfo";
 
 function App() {
   return (
@@ -72,6 +74,8 @@ function App() {
           <Route path="user_list" element={<UserList />} />
           <Route path="admin_profile" element={<AdminProfile />} />
           <Route path="ride_list" element={<RideList />} />
+          <Route path="ride_details" element={<AdminRideDetails />} />
+          <Route path="vehicle_info" element={<AdminVehicleInfo />} />
           {/* </Route> */}
           {/* <Route path="admin_login" element={<AdminLogin />} /> */}
           {/* <Route path="*" element={<NoPage />} /> */}
