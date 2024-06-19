@@ -38,12 +38,13 @@ import VendorList from "./Components/AdminComponents/VendorList";
 import UserList from "./Components/AdminComponents/UserList";
 import AdminProfile from "./Components/AdminComponents/AdminProfile";
 import AdminLogin from "./Components/AdminComponents/AdminLogin";
+import RideList from "./Components/AdminComponents/RideList";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        {/* <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<AboutUsPage />} />
           <Route path="contact" element={<ContactUsPage />} />
@@ -61,8 +62,8 @@ function App() {
           <Route path="ride_book" element={<RideBook />} />
           <Route path="add_ride" element={<AddRide />} />
           <Route path="my_vehicle" element={<MyVehicle />} />
-          <Route path="admin" element={<Admin />} />
-          {/* <Route path="/admin_layout" element={<AdminLayout />}>
+          <Route path="admin" element={<Admin />} /> */}
+        <Route path="/admin_layout" element={<AdminLayout />}>
           <Route path="admin_vehicle" element={<AdminVehicle />} />
           <Route path="vendor_details" element={<VendorDetails />} />
           <Route path="user_details" element={<UserDetails />} />
@@ -70,7 +71,8 @@ function App() {
           <Route path="vendor_list" element={<VendorList />} />
           <Route path="user_list" element={<UserList />} />
           <Route path="admin_profile" element={<AdminProfile />} />
-        </Route> */}
+          <Route path="ride_list" element={<RideList />} />
+          {/* </Route> */}
           {/* <Route path="admin_login" element={<AdminLogin />} /> */}
           {/* <Route path="*" element={<NoPage />} /> */}
         </Route>
