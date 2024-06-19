@@ -93,8 +93,8 @@ function ContactUsPage() {
         </div>
       </div>
       <div className="flex justify-between max-w-6xl mx-auto p-4 space-y-20">
-        <div className="w-full sm:space-x-8 sm:flex justify-around">
-          <div className="sm:w-1/2 space-y-2">
+        <div className="w-full flex flex-col lg:flex-row justify-around gap-8">
+          <div className="w-full lg:w-1/2 space-y-2">
             <div className="text-2xl pb-4 font-medium">Send us an Email</div>
             <div className="md:flex w-full md:space-x-3">
               <div className="grid space-y-2 w-full">
@@ -146,7 +146,7 @@ function ContactUsPage() {
               </button>
             </div>
           </div>
-          <div className="sm:w-1/2 border">
+          <div className="w-full lg:w-1/2 border">
             <div className="mapouter">
               <div style={{ overflow: "hidden", height: "482px" }}>
                 <iframe

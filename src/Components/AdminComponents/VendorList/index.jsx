@@ -229,7 +229,10 @@ export default function VendorList() {
                   </button>
                 </TableCell>
                 <TableCell component="th" scope="row">
-                  <button className="px-4 py-2 bg-green-500 rounded">
+                  <button
+                    className="px-4 py-2 bg-green-500 rounded"
+                    onClick={() => navigate("/admin_layout/vendor_details")}
+                  >
                     Details
                   </button>
                 </TableCell>

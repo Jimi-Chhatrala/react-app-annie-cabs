@@ -18,6 +18,7 @@ import LastPageIcon from "@mui/icons-material/LastPage";
 import { styled } from "@mui/material/styles";
 import { tableCellClasses } from "@mui/material/TableCell";
 import TableHead from "@mui/material/TableHead";
+import { useNavigate } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -138,6 +139,8 @@ const rows = [
 ];
 
 export default function UserList() {
+  const navigate = useNavigate();
+
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(5);
 
@@ -226,7 +229,10 @@ export default function UserList() {
                   </button>
                 </TableCell>
                 <TableCell component="th" scope="row">
-                  <button className="px-4 py-2 bg-green-500 rounded">
+                  <button
+                    className="px-4 py-2 bg-green-500 rounded"
+                    onClick={() => navigate("/admin_layout/user_details")}
+                  >
                     Details
                   </button>
                 </TableCell>
